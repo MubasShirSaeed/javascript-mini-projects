@@ -1,0 +1,183 @@
+::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background: #82b8dc;
+    font-family: sans-serif;
+
+}
+.logo{
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+nav{
+    
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    
+
+}
+.fixed{
+    position:fixed;
+    background: #fff;
+    margin-top: 0;
+    box-shadow: 0rem 0rem 5rem #202020;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    margin-right: 2rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #202020;
+    font-size: 1.2rem;
+    
+}
+nav ul li a:hover{
+    opacity: 0.8;
+    background: #bfbebe;
+    padding: 1rem;
+}
+.toggle{
+    display: none;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.hero h1 {
+    color: #202020;
+    text-transform: uppercase;
+    padding: 2rem;
+  }
+  .hero p {
+    color: #202020;
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+  }
+  .btn-hero{
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+  }
+  .btn-hero a{
+    border: 1px solid #202020;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #202020;
+    transition: all 0.3s ease;
+
+  }
+  .btn-hero:hover{
+    scale: 1.1;
+  }
+  .btn-hero a:hover{
+    scale: 1.2;
+    background: #202020;
+    color: #fff;
+  }
+@media screen and (max-width: 768px){
+    .toggle{
+        display:block;
+        color:#202020;
+        z-index: 100;
+    }
+    nav{
+        margin: 0;
+        border-radius: 0;
+        background: #fff;
+        box-shadow: 0rem 0rem 5rem #202020;
+        width: 100%;
+        position: fixed;
+    }
+    nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right:0;
+        top:-100%;
+        background: #fff;
+        margin: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        /* box-shadow: 2rem 1rem 5rem #202020; */
+        opacity: 0;
+        transition: all 0.3s linear;
+        
+        
+
+    }
+    nav ul li a{
+        
+        padding-right: 2rem;
+        color: #202020;
+    }
+    .show{
+        opacity: 1;
+        top: 4rem;
+    }
+}
+.hero-2{
+    background: #fff;
+}
+.hero-3{
+    background: #dddcdc;
+}
+.btn{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right:0;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    background: #71e2aa;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem #202020;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+   
+}
+
+.btn a i{
+    text-decoration: none;
+    color: #202020;
+    padding: 1rem;
+    
+}
+.showbtn{
+    opacity: 1;
+}
+
+  .footer
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#202020;
+    color: #fff;
+  }
+  .footer p{
+    padding: 5rem;
+  }

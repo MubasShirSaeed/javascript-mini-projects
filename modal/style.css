@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height:200px;
+    width:400px;
+    border-radius: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #303030;
+    color: #fff;
+    font-weight: bold;
+}
+.btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+    opacity:0.8;
+    transition: all 0.3s ease-in-out;
+}
+.overlay{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    background:black;
+    opacity: 1;
+    border-radius: 1rem;
+    z-index: 99;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+}
+ .overlay .btn2{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    background-color: none;
+    width:100%;
+    z-index: 100; 
+}
+.btn2 i:hover{
+    scale: 1.2;
+    cursor: pointer;
+}
+.btn2 button{
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+} 
+.active{
+    display: flex;
+}
