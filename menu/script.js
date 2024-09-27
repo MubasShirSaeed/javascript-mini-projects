@@ -126,10 +126,5 @@ btns.forEach((btn)=>{
     })
    
 })
-// btns.forEach((btn)=>{
-//   btn.addEventListener('click',(e)=>{
-    
-  
-// })
-// })
+
 
