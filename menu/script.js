@@ -118,17 +118,18 @@ btns.forEach((btn)=>{
         else{
             dispalyMenu(newMenu)
         }
+        btns.forEach((btn)=>{
+          btn.classList.remove("active")
+     })
+     btn.classList.add("active") 
             
     })
    
 })
-btns.forEach((btn)=>{
-  btn.addEventListener('click',(e)=>{
+// btns.forEach((btn)=>{
+//   btn.addEventListener('click',(e)=>{
     
-    btns.forEach((btn)=>{
-       btn.classList.remove("active")
-  })
-  btn.classList.add("active") 
-})
-})
+  
+// })
+// })
 
