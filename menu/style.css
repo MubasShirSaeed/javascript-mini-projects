@@ -37,6 +37,11 @@ body{
     background:rgb(138, 206, 30) ;
     color: white;
 }
+.btns li.active{
+    background:rgb(138, 206, 30) ;
+    color: white;
+}
+
 .grid{
     padding-top: 4rem;
     width: 90vw;
